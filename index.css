@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/*메인 텍스트와 목록*/
+div#wrap{width:1200px; margin:0 auto; position: relative; top:-33px; z-index: 80;}
+
+div#wrap>#mainTxt{width:100%; height:430px; margin-bottom: 50px;}
+div#wrap>#mainTxt>div{float: right; overflow: hidden;}
+div#wrap>#mainTxt h2{font-size:70px; font-weight: 900; transform:rotate(180deg); text-align: right; display: none;}
+div#wrap>#mainTxt p{font-size:30px; font-weight: 700; margin:70px 0 50px; line-height: 48px;}
+div#wrap>#mainTxt ul #gnb>p{width:100%; font-size:12px; font-weight: 700; color:#bfb5ae; text-decoration: underline; cursor: pointer; margin:20px 0;}
+div#wrap>#mainTxt ul #gnb>p:hover{color:#000; text-decoration: none;}
+div#wrap>#mainTxt ul #gnb li{font-size:12px; font-weight: 700; float: left; color:#000; width:30%; margin:20px 0; cursor: pointer;}
+div#wrap>#mainTxt ul #gnb li:hover{color:#bbb; text-decoration: underline;}
+
+/*포트폴리오 썸네일*/
+section#pflist{width:100%; overflow: hidden;}
+section#pflist>a{width:500px; margin:80px 0; color:#000; display: block; cursor: pointer; position:relative;}
+section#pflist>a div{width:500px; position: absolute; top:0; left:0;}
+section#pflist>#pf1,#pf1_2,#pf3{float: left;}
+section#pflist>#pf2,#pf3_4,#pf4{float: right;}
+section#pflist>#pf1_2 p,#pf3_4 p{float: left; margin:80px 50px 80px; font-size:12px; line-height: 18px;}
+
+section#pflist>a#pf1{height:285px;}
+section#pflist>a#pf2{height:619px;}
+section#pflist>a#pf3{height:460px;}
+section#pflist>a#pf4{height:285px;}
+
+section#pflist>a#pf1 div{height:285px;}
+section#pflist>a#pf2 div{height:619px;}
+section#pflist>a#pf3 div{height:460px;}
+section#pflist>a#pf4 div{height:285px;}
+
+section#pflist>a>#pfImg>p{transform:rotate(-90deg); width:60px; height:20px; position: absolute; top:15px; left:-13px;}
+section#pflist>#pf2>#pfImg>p{width:80px; top:5px; left:-20px;}
+section#pflist>#pf3>#pfImg>p{width:100px; top:-20px; left:-30px;}
+section#pflist>#pf4>#pfImg>p{width:70px; top:25px; left:-20px;}
+
+section#pflist>a>#pfImg>img{float: right;}
+section#pflist>a>#pfImg>h6{right:30px; bottom:25px; font-size: 12px; font-weight: 700; position: absolute;}
+
+section#pflist>a>#imgInside{display: none;}
+section#pflist>a>#imgInside>h4{left:80px; top:-22px; font-size: 24px; line-height: 36px; font-weight: 700; position: absolute;}
+section#pflist>a>#imgInside>h5{left:80px;  bottom:25px; font-size: 10px; position: absolute;}

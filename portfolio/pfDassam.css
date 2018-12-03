@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+html,body{height:100%;}
+body{font-family: 'Noto Sans KR', AppleSDGothicNeo-Regular, 'Malgun Gothic','맑은 고딕',sans-serif; background-color: #fff;}
+a{color:#000; display: block;}
+
+/*header*/
+header{color:#1d544a; width:100%; cursor: pointer; font-weight: 900;}
+header>h1{position:fixed; top:50px; left:80px; z-index: 100;}
+header>h1>a{display: block; color:#1d544a; font-size:30px; width:86px; line-height: 1; }
+header>h1>a>span{opacity: .3;}
+
+header>#about{position:fixed;top:50px; right:80px; z-index: 99; display: block; color:#1d544a;}
+header>#about #fbtn{font-size:18px; width:55px; height:55px; line-height:25px; border:3px solid #1d544a; text-align: center; box-sizing: border-box; background-color: #fff;}
+header>#about #fbtn:hover{color:#fff; background-color: #1d544a;}
+header>#about #ftxt{position:absolute; top:190px; right:-125px; width:300px; font-size:50px; transform:rotate(90deg); z-index: 98; display: none;}
+
+/*메인이미지*/
+div#wrap{width:100%; height:900px; overflow:hidden;}
+article{background:url(images/pfDassam/mainBg.png) no-repeat center; background-size: cover; color:#fff; width:100%; height:726px; position: relative; opacity:0; }
+article>p{font-size:12px; position:absolute; top:50px; right:60%; font-weight:700; letter-spacing: 1px; color:#000;}
+article>img{position: absolute; left:0; right:0; margin:auto; top:300px; width:1200px; opacity: 0; margin-top:50px;}
+article>section{position: absolute; top:235px; left:25%; width:670px; color:#000; opacity: 0; margin-top:50px;}
+article h5{font-size: 12px; font-weight: 500; margin-bottom: 20px;}
+article h3{font-size:50px; font-weight: 500; line-height: 70px;}
+article h3>span{font-size:70px; font-weight: 900; font-style: italic;}
+article>h2{font-size:50px; color:#000; transform:rotate(180deg); font-weight: 900; position:absolute; right:23%; bottom:-180px; width:360px; height:60px; opacity: 0;}
+article>aside{color:#1d544a; position: fixed; font-size:10px; font-weight: 700; bottom:70px; right:80px; transform:rotate(90deg); z-index: 96;}
+
+/*concept*/
+div#mainTxt{width:1200px; margin:120px auto 200px; overflow:hidden; position: relative; opacity:0;}
+
+div#mainTxt>a#marvel1{transform:rotate(-90deg); font-size: 20px; font-weight: 500; width:250px; height:40px; text-decoration: underline; position: absolute; top:100px; left:-20px;}
+div#mainTxt>a#marvel2{transform:rotate(-90deg); font-size: 20px; font-weight: 500; width:250px; height:40px; text-decoration: underline; position: absolute; top:100px; left:20px;}
+div#mainTxt>a#process{transform:rotate(-90deg); font-size: 20px; font-weight: 500; width:250px; height:40px; text-decoration: underline; position: absolute; top:100px; left:60px;}
+
+div#mainTxt>a#marvel1:hover,div#mainTxt>a#marvel2:hover,div#mainTxt>a#process:hover{color:#bfb5ae;}
+
+
+div#mainTxt>p{font-size:30px; font-weight: 500; line-height: 1.4; margin-left: 400px; width:800px; margin-bottom:90px; text-align: right;}
+div#mainTxt>p>span{font-size:18px; color:#bfb5ae;}
+div#mainTxt>ul{color:#fff; font-size:20px; font-weight: 700; margin-left:450px; width:750px; height:50px;}
+div#mainTxt>ul>li{background-color: #000; width:200px; height: 50px; line-height: 50px;  float: left; text-align:center; margin-left:50px;}
+
+/*story*/
+div#story{width:100%; position: relative; margin-bottom:120px;}
+div#story>h2{font-size:50px; font-weight: 900; position: absolute; left:350px; top:-30px;}
+div#story>ul{width:100%; background-color:#f5f4f3; overflow:hidden; height: 400px;}
+div#story>ul>li{width:960px; margin:90px auto; text-align: center;}
+div#story>ul ul{width:100%; float: left;}
+div#story>ul ul>li{font-size:20px; line-height: 2; font-weight: 300;}
+div#story>ul ul>li:first-child{font-size:30px; line-height: 2; font-weight: 500;}
+
+/*analysis*/
+div#analysis{width:100%; position: relative; margin-bottom:120px;}
+div#analysis>h2{font-size:50px; font-weight: 900; position: absolute; right:350px; top:-30px;}
+div#analysis>ul{width:100%; background-color:#fff; overflow:hidden; height: 600px;}
+div#analysis>ul>li{width:1200px; margin:90px auto; text-align: center;}
+div#analysis>ul ul{width:100%; height:224px; float: left;}
+
+/*target*/
+div#target{width:100%; position: relative; margin-bottom:80px;}
+div#target>h2{font-size:50px; font-weight: 900; position: absolute; left:350px; top:-30px;}
+div#target>div{width:100%; background-color:#f5f4f3; overflow:hidden;}
+div#target>div>div{width:1200px; height:659px; margin:40px auto; background:url(images/pfDassam/target.png) no-repeat center; background-size: cover; color:#fff; position: relative;}
+div#target>div>div>p{position:absolute; color:#000; line-height: 3; font-size:20px; font-weight: 500; width:400px; top:180px; left:230px;}
+
+/*font*/
+div#font{width:100%; position: relative; margin-bottom:80px;}
+div#font>h2{font-size:50px; font-weight: 900; position: absolute; left:350px; top:-30px;}
+div#font>ul{width:100%; background-color:#fff; overflow:hidden; height: 400px;}
+div#font>ul>li{width:964px; margin:90px auto; text-align: center;}
+div#font>ul ul{width:100%; height:224px; float: left;}
+
+/*color*/
+div#color{width:100%; position: relative; margin-bottom: 100px;}
+div#color>h2{font-size:50px; font-weight: 900; position: absolute; right:350px; top:-30px;}
+div#color>ul{width:100%; background-color:#f5f4f3; overflow:hidden;}
+div#color>ul>li{width:960px; margin:100px auto; text-align: center;}
+div#color>ul ul{width:320px; height:270px; float: left;}
+div#color>ul ul>li:first-child{border-radius: 50%; width:150px; height: 150px; margin:0 auto;}
+div#color>ul ul>li:last-child{font-size:20px; line-height: 2; margin:15px 0;}
+div#color>ul ul:first-child>li:first-child{background-color:#31d1dc; }
+div#color>ul ul:nth-child(2)>li:first-child{background-color: #bee3e3;}
+div#color>ul ul:last-child>li:first-child{background-color: #facc2e;}
+div#color>ul>div{width:724px; margin:100px auto 50px; }
+div#color>ul>div>p{font-size:20px; text-align: center; line-height: 1.5; margin-top:50px; font-weight: 300;}
+
+/*logo*/
+div#logo{width:100%; position: relative; margin-bottom:80px;}
+div#logo>h2{font-size:50px; font-weight: 900; position: absolute; left:350px; top:-30px;}
+div#logo>ul{width:100%; background-color:#fff; overflow:hidden; height: 400px;}
+div#logo>ul>li{width:676px; margin:90px auto; text-align: center;}
+div#logo>ul ul{width:100%; height:304px; float: left;}
+
+/*webPage*/
+div#webPage{width:100%; position: relative; margin-bottom:120px;}
+div#webPage>h2{font-size:50px; font-weight: 900; position: absolute; left:350px; top:-30px;}
+div#webPage>ul{width:100%; background-color:#f5f4f3; overflow:hidden; height: 2771px;}
+div#webPage>ul>li{width:1200px; margin:90px auto; text-align: center;}
+div#webPage>ul ul{width:100%; height:2571px; float: left;}
+
+/*app*/
+div#app{width:100%; position: relative; margin-bottom: 120px;}
+div#app>h2{font-size:50px; font-weight: 900; position: absolute; right:350px; top:-30px;}
+div#app>div{width:100%; background-color:#fff; overflow:hidden;}
+div#app>div>div{width:1200px; height:2422px; margin:100px auto; background:url(images/pfDassam/app.png) no-repeat center; background-size: cover; color:#fff; position: relative;}
+div#app>div>div>p{position:absolute; color:#000; line-height: 1.4; font-size:20px; width:680px; right:20px;}
+div#app>div>div>p>i{font-size:14px; color:#bee3e3;}
+div#app>div>div>p:first-child{top:60px;}
+div#app>div>div>p:nth-child(2){top:140px;}
+div#app>div>div>p:nth-child(3){top:240px;}
+div#app>div>div>p:nth-child(4){top:340px;}
+div#app>div>div>p:nth-child(5){bottom:300px; font-weight: 300; left:100px; width:550px; }
+div#app>div>div>p:nth-child(6){bottom:160px; font-weight: 300; left:100px; width:550px; }
+div#app>div>div>p:nth-child(7){bottom:0; font-weight: 300; left:100px; width:550px; }
+
+div#app>div>div>a#marvel1{position:absolute; bottom:160px; right:100px; width:300px; height:50px; line-height: 50px; border:2px solid #000; text-align: center; color:#000;}
+div#app>div>div>a#marvel2{position:absolute; bottom:80px; right:100px; width:300px; height:50px; line-height: 50px; border:2px solid #000; text-align: center; color:#000;}
+div#app>div>div>a#process{position:absolute; bottom:0px; right:100px; width:300px; height:50px; line-height: 50px; border:2px solid #000; text-align: center; color:#000;}
+div#app>div>div>a#marvel1:hover,div#app>div>div>a#marvel2:hover,div#app>div>div>a#process:hover{color:#fff; background-color: #000; text-decoration: underline;}
+
+
+/*footer*/
+footer{width:100%; height: 150px; background-color:#1d544a; position: relative; bottom: 0; left: 0;}
+footer>div{width:400px; height:50px; color: #fff; position: absolute; top:0; bottom: 0; left:50px; margin:auto;}
+footer>div>p{font-size:12px; line-height: 20px; font-weight: 300; padding-left:20px; border-left:2px solid #fff;}
+footer>div>p>span{font-size:20px; font-weight: 700;}
+footer>a{color:#fff; text-align: center; width:30px; height:30px; position: absolute; top:0; bottom: 0; right: 50px; margin:auto;}
+footer>a>span{text-decoration: underline;}

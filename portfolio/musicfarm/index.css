@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+html,body{height: 100%;}
+body{font-family: 'Noto Sans KR','Malgun Gothic','맑은 고딕',sans-serif;}
+a{color:#1e1e1e; display: block;}
+
+div#menu{width:100%; border-bottom:1px solid #d9d9d9; overflow: hidden;}
+div#menu>div#menu-wrap{width:1180px; margin:10px auto; overflow:hidden;}
+div#menu>div#menu-wrap>a{color: #fff; background-color: #000; font-size: 12px; width:205px; padding:10px;font-weight: 700; float: left;}
+div#menu>div#menu-wrap>a:hover{background-color: #45bda5;}
+div#menu>div#menu-wrap>ul{float:right; cursor: pointer;}
+div#menu>div#menu-wrap>ul>li{font-size:14px; height:32px; line-height: 32px;}
+div#menu>div#menu-wrap>ul>li>span>i{margin-left:10px; width:15px; height:15px;}
+div#menu>div#menu-wrap>ul ul{position:fixed; z-index: 90; background-color: #fff; top:-52px; height:52px; line-height: 52px; width:450px; left:50%;}
+div#menu>div#menu-wrap>ul ul>li{height:20px; float: left; margin-right:30px;}
+div#menu>div#menu-wrap>ul ul>li:last-child{margin-right:0;}
+div#menu>div#menu-wrap>ul ul>li:hover a{color:#45bda5;}
+
+header{width:1200px; margin:0 auto; border-bottom: 4px solid #1e1e1e; overflow:hidden; height:100px; position: relative;}
+header>h1>a{font-size:30px; font-weight: 900; letter-spacing: 1px; text-align: center; line-height: 100px;}
+header>h1>a>span{font-family:'Lora'; font-style: italic;  font-weight: 400;}
+header>div#music{position: absolute; bottom:5px; right:10px;}
+header>div#music>img{margin-left:5px; cursor: pointer;}
+header>div#music>div#lpP{position: relative; right:90px; bottom:10px;}
+header>div#music>div#lpP>img#lp{position: absolute; z-index: 80;}
+header>div#music>div#lpP>img#record{width:40px; height:40px; animation:spinx infinite 3s; position: absolute; z-index: 81; right:2px; bottom:-60px;}
+header>div#music>div#lpP>img#lpPin{position: absolute; position: absolute; z-index: 82; top:-15px; right:-20px; transform: rotate(30deg);}
+
+
+@keyframes spinx {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+div#wrap{width:1200px; margin:130px auto 100px; overflow: hidden;}
+div#wrap>a#img{width:1200px; height:500px; cursor: pointer;}
+
+footer{width:350px; height:30px; margin:20px auto;}
+footer>a{display: none;}
+footer>p{font-size:12px; font-weight: 100;}
+footer>p>span{font-size:20px; font-weight: 900; letter-spacing: 1px;}
+footer>p>span>span{font-family:'Lora'; font-style: italic;  font-weight: 400;}
+
+
+/*모바일 0~414px*/
+@media screen and (max-width:414px){
+
+div#menu>div#menu-wrap{width:100%; margin:10px auto; box-sizing: border-box;}
+div#menu>div#menu-wrap>a{display: none;}
+div#menu>div#menu-wrap>ul>li>span{display: none;}
+div#menu>div#menu-wrap>ul ul{width:100%; left:0; top:0px;}
+div#menu>div#menu-wrap>ul ul>li{font-size:12px; height:20px; float: left; margin-right:25px;}
+div#menu>div#menu-wrap>ul ul>li:last-child{margin-right:0;}
+div#menu>div#menu-wrap>ul ul>li:first-child{margin-left:10px;}
+
+header{width:100%;}
+header>div#music>img{display: none;}
+header>div#music>div#lpP{bottom:30px;}
+header>div#music>div#lpP>img#record{right:-60px;}
+header>div#music>div#lpP>img#lpPin{right:-80px;}
+
+div#wrap{width:100%; margin:100px auto 80px; overflow: hidden;}
+div#wrap>a#img{width:100%; height:350px;}
+
+footer{height:40px;}
+footer>a{display:block; color: #fff; background-color: #000; font-size: 10px; width:200px; padding:5px;font-weight: 700; float: right;}
+}

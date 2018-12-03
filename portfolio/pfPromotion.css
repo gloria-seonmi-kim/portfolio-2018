@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+html,body{height:100%;}
+body{font-family: 'Noto Sans KR', AppleSDGothicNeo-Regular, 'Malgun Gothic','맑은 고딕',sans-serif; background-color: #fff;}
+a{color:#000; display: block;}
+
+/*header*/
+header{color:#1d544a; width:100%; cursor: pointer; font-weight: 900;}
+header>h1{position:fixed; top:50px; left:80px; z-index: 100;}
+header>h1>a{display: block; color:#1d544a; font-size:30px; width:86px; line-height: 1; }
+header>h1>a>span{opacity: .3;}
+
+header>#about{position:fixed;top:50px; right:80px; z-index: 99; display: block; color:#1d544a;}
+header>#about #fbtn{font-size:18px; width:55px; height:55px; line-height:25px; border:3px solid #1d544a; text-align: center; box-sizing: border-box; background-color: #fff;}
+header>#about #fbtn:hover{color:#fff; background-color: #1d544a;}
+header>#about #ftxt{position:absolute; top:190px; right:-125px; width:300px; font-size:50px; transform:rotate(90deg); z-index: 98; display: none;}
+
+/*메인이미지*/
+div#wrap{width:100%; height:900px; overflow:hidden;}
+article{background:url(images/pfPromotion/mainBg.png) no-repeat center; background-size: cover; color:#fff; width:100%; height:640px; position: relative; opacity:0; }
+article>p{font-size:12px; position:absolute; top:50px; right:60%; font-weight:700; letter-spacing: 1px;}
+article>img{position: absolute; left:0; right:0; margin:auto; top:300px; width:1200px; opacity: 0; margin-top:50px;}
+article>section{position: absolute; top:240px; left:25%; width:670px; color:#fff; opacity: 0; margin-top:50px;}
+article h5{font-size: 12px; font-weight: 500; margin-bottom: 20px;}
+article h3{font-size:50px; font-weight: 500; line-height: 60px;}
+article h3>span{font-size:70px; font-family:'Archivo Black';}
+article>h2{font-size:50px; color:#000; transform:rotate(180deg); font-weight: 900; position:absolute; right:23%; bottom:-220px; width:360px; height:60px; opacity: 0;}
+article>aside{color:#1d544a; position: fixed; font-size:10px; font-weight: 700; bottom:70px; right:80px; transform:rotate(90deg); z-index: 96;}
+
+/*tour*/
+div#tour{width:100%; position: relative; margin:20px 0;}
+div#tour>ul{width:100%; background-color:#fff; overflow:hidden; height: 5500px;}
+div#tour>ul>li{width:1600px; margin:90px auto; text-align: center;}
+div#tour>ul ul{width:100%; height:5380px; float: left;}
+
+/*footer*/
+footer{width:100%; height: 150px; background-color:#1d544a; position: relative; bottom: 0; left: 0;}
+footer>div{width:400px; height:50px; color: #fff; position: absolute; top:0; bottom: 0; left:50px; margin:auto;}
+footer>div>p{font-size:12px; line-height: 20px; font-weight: 300; padding-left:20px; border-left:2px solid #fff;}
+footer>div>p>span{font-size:20px; font-weight: 700;}
+footer>a{color:#fff; text-align: center; width:30px; height:30px; position: absolute; top:0; bottom: 0; right: 50px; margin:auto;}
+footer>a>span{text-decoration: underline;}
